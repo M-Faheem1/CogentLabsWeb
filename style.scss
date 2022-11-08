@@ -2,8 +2,6 @@
 @import 'font';
 @import 'variables';
 
-
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,10 +15,7 @@
   &.site {
     padding: 30px;
   }
-  ul li:not(:last-child) {
-    margin-right: 24px;
-  } 
-  ul{
+  ul {
     display: flex;
     list-style-type: none;
     a{
@@ -28,39 +23,34 @@
       color: black;
     }
   }
-  .btn{
+  ul li:not(:last-child) {
+    margin-right: 24px;
+  } 
+  .btn {
     @include button;
-    &:hover{
-      background-color: $primary;
-      opacity: 0.7;
-    }
   }
 }
 .consultaion {
   text-align: center;
-  h1{
+  h1 {
     font-size: 60px;
     font-weight: 800;
-    span{
+    span {
       display: block;
     }
   }
-  p{
+  p {
     @include p;
     line-height: 40px;
     max-width: 700px;
     margin: 0 auto auto auto; 
   }
-  .btn{
+  .btn {
     @include button;
     margin: 35px 0px 35px;
-    &:hover{
-      background-color: $primary;
-      opacity: 0.7;
-    }
   }
 }
-.grid {
+.images-grid {
   display: grid;
   justify-content: space-between;
   grid-template-areas:
@@ -81,7 +71,7 @@
   h3 {
    @include h-3;
   }
-  h4{
+  h4 {
     @include h-4;
   }
   .card-listing {
@@ -92,7 +82,7 @@
       max-width: 360px;
       &:hover {
         border: 2px solid $primary;
-        svg{
+        svg {
           stroke: $primary;
         }
       }
@@ -117,9 +107,6 @@
         transform: translateX(15px);
       }
     }
-    // @media screen and (min-width:1200px) {
-    //   max-width: 1500px
-    // }
   }
   a {
     display: flex;
@@ -134,7 +121,7 @@
         transform: translateX(15px);
       }
     }
-    svg{
+    svg {
       margin-left: 5px;
     }
   }
@@ -223,9 +210,9 @@
     h6 {
       @include h-6;
     }
-    a{
+    a {
       text-decoration: none;
-      span{
+      span {
         font-size: 18px;
         font-weight: 400;
         font-family: $secondary-font;
