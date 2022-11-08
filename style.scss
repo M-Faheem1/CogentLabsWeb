@@ -214,7 +214,7 @@
 .contact-us {
   p {
     @include p;
-    font-family: $myfont;
+    font-family: $secondary-font;
     margin-top: 2.5rem;
     max-width: 360px;
   }
@@ -228,7 +228,7 @@
       span{
         font-size: 18px;
         font-weight: 400;
-        font-family: $myfont;
+        font-family: $secondary-font;
         color: #000000;
       }
     }
@@ -251,7 +251,7 @@
             fill: $primary;
           }
           li{
-            font-family: $myfont;
+            font-family: $secondary-font;
           }
         }
       }
