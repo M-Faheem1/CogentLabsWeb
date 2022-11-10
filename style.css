@@ -63,7 +63,7 @@ nav.navbar .btn:hover {
   font-size: 18px;
   font-weight: 500;
   border: none;
-  margin: 35px 0px;
+  margin: 35px auto;
 }
 .consultation .btn:hover {
   background-color: #b624ff;
@@ -201,6 +201,8 @@ nav.navbar .btn:hover {
 }
 .about-us .set-us-apart .set-us-apart-listing .set-us-apart-item {
   display: flex;
+  margin-top: 2rem;
+  margin-left: 1rem;
 }
 .about-us .set-us-apart .set-us-apart-listing .set-us-apart-item .counter {
   flex: 0 0 60px;
@@ -214,7 +216,6 @@ nav.navbar .btn:hover {
   font-weight: 500;
   width: 26px;
   height: 26px;
-  margin-top: 18px;
   color: white;
   background-color: #b624ff;
 }

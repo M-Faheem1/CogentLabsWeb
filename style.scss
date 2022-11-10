@@ -46,7 +46,7 @@ nav.navbar {
   }
   .btn {
     @include button;
-    margin: 35px 0px;
+    margin: 35px auto;
   }
 }
 .images-grid {
@@ -162,6 +162,8 @@ nav.navbar {
     .set-us-apart-listing {
       .set-us-apart-item {
         display: flex;
+        margin-top: 2rem;
+        margin-left: 1rem;
         .counter {
           flex: 0 0 60px;
           span {
@@ -173,7 +175,6 @@ nav.navbar {
             font-weight: 500;
             width: 26px;
             height: 26px;
-            margin-top: 18px;
             color: white;
             background-color: $primary;
           }
