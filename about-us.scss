@@ -1,0 +1,139 @@
+@import 'mixin';
+@import 'font';
+@import 'variables';
+@import 'style';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family:SF pro Display;
+}
+
+.connection {
+  border-bottom: 2px solid #7B7B7B;
+  .heading-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    h1 {
+      display: block;
+      max-width: 619px;
+      font-size: 60px;
+      span {
+        color: $primary;
+      }
+    }
+    p {
+      @include p;
+    }
+  }
+  .images {
+    display: flex;
+    margin-bottom: 3rem;
+    .img-1 {
+      flex: 0 0 770px;
+    }
+    .img-2 {
+      flex: 1;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+.ceo {
+  border-bottom: 2px solid #7B7B7B;
+  margin-top: 5rem;
+  h5 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  p {
+  @include p;
+  }
+  .we-are-strong {
+    align-items: center;
+    h2 {
+      @include h-2;
+    }
+  }
+  .ceo-sec {
+    align-items: flex-start;
+    img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+    }
+    h4 {
+      font-size: 38px;
+      font-weight: 700;
+    }
+    .ceo-detail {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-bottom: 5rem;
+      h3 {
+        font-size: 24px;
+        font-weight: 700;
+      }
+      span {
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.our-work {
+  .snapshot {
+    text-align: center;
+    h3 {
+      @include h-3;
+      margin-top: 5rem;
+      span {
+        @include span;
+      }
+    }
+  }
+  .snapshot-projects {
+  .snapshot-projects-list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top: 3rem;
+  }
+  }
+}
+.benifits {
+  .company-benefits {
+    text-align: center;
+    h3 {
+      @include h-3;
+      margin: 5rem 0rem;
+      span {
+        @include span;
+      }
+    }
+  }
+  .benifits-list {
+    .benifits-detail {
+      display: flex;
+      flex-direction: column;
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h6 {
+          color: $primary;
+          font-size: 40px;
+        }
+      }
+      p {
+        @include p;
+        border-bottom: 0.5px solid #7B7B7B;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}

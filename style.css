@@ -1,0 +1,327 @@
+@font-face {
+  font-family: SF pro Display;
+  src: url(./font/FontsFree-Net-SFProDisplay-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: SF pro Display;
+}
+
+nav.navbar {
+  display: flex;
+  padding: 30px;
+  width: 100%;
+}
+nav.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+nav.navbar ul a {
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000000;
+}
+nav.navbar ul li:not(:last-child) {
+  margin-right: 24px;
+}
+nav.navbar .btn {
+  color: #ffffff;
+  background-color: #b624ff;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+}
+nav.navbar .btn:hover {
+  background-color: #b624ff;
+  opacity: 0.7;
+}
+
+.consultation {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.consultation h1 {
+  font-size: 60px;
+  font-weight: 800;
+}
+.consultation h1 span {
+  display: block;
+}
+.consultation p {
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 700px;
+  margin: 0px auto auto;
+}
+.consultation .btn {
+  color: #ffffff;
+  background-color: #b624ff;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  margin: 35px auto;
+}
+.consultation .btn:hover {
+  background-color: #b624ff;
+  opacity: 0.7;
+}
+
+.images-grid {
+  display: grid;
+  justify-content: space-between;
+  grid-template-areas: "item-1 item-2 item-3" "item-4 item-2 item-5";
+}
+.images-grid .item-1 {
+  grid-area: item-1;
+}
+.images-grid .item-2 {
+  grid-area: item-2;
+}
+.images-grid .item-3 {
+  grid-area: item-3;
+}
+.images-grid .item-4 {
+  grid-area: item-4;
+}
+.images-grid .item-5 {
+  grid-area: item-5;
+}
+.images-grid .image:hover {
+  opacity: 0.7;
+}
+
+.services {
+  margin-top: 3rem;
+}
+.services h3 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #b624ff;
+}
+.services h4 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.services .card-listing {
+  display: flex;
+  margin-top: 3rem;
+}
+.services .card-listing .card {
+  margin-right: 20px;
+  padding: 30px;
+  max-width: 360px;
+  border: 2px solid rgba(0, 0, 0, 0.2509803922);
+}
+.services .card-listing .card:hover {
+  border: 2px solid #b624ff;
+}
+.services .card-listing .card:hover svg {
+  stroke: #b624ff;
+}
+.services .card-listing .card svg {
+  margin-bottom: 20px;
+}
+.services .card-listing .card h5 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.services .card-listing .card p {
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 300px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 98px;
+}
+.services .card-listing .arrow:hover {
+  transform: translateX(15px);
+  transition: 0.2s ease-in;
+}
+.services a {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #b624ff;
+  margin: 20px 0px 0px;
+}
+.services a:hover {
+  color: #b624ff;
+}
+.services a:hover svg {
+  transform: translateX(15px);
+  transition: 0.2s ease-in;
+}
+.services a svg {
+  margin-left: 5px;
+}
+
+.about-us {
+  margin-top: 3rem;
+}
+.about-us .row {
+  align-items: center;
+}
+.about-us .row .col-left {
+  margin-right: 3rem;
+}
+.about-us h3 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #b624ff;
+}
+.about-us h4 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.about-us p {
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 540px;
+}
+.about-us h6 {
+  color: #b624ff;
+  font-size: 40px;
+  font-weight: 700;
+}
+.about-us span {
+  font-size: 20px;
+  font-weight: 600;
+}
+.about-us .set-us-apart {
+  margin-top: 80px;
+}
+.about-us .set-us-apart .set-us-apart-listing .set-us-apart-item {
+  display: flex;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+.about-us .set-us-apart .set-us-apart-listing .set-us-apart-item .counter {
+  flex: 0 0 60px;
+}
+.about-us .set-us-apart .set-us-apart-listing .set-us-apart-item .counter span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 500;
+  width: 26px;
+  height: 26px;
+  color: white;
+  background-color: #b624ff;
+}
+.about-us .set-us-apart .set-us-apart-listing .set-us-apart-item .content {
+  flex: 1;
+}
+.about-us .set-us-apart .set-us-apart-listing .set-us-apart-item .content h6 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+}
+.about-us .set-us-apart .set-us-apart-listing .set-us-apart-item .content p {
+  max-width: 500px;
+}
+
+.portfolio {
+  margin-top: 3rem;
+}
+.portfolio .portfolio-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio .portfolio-header h3 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #b624ff;
+}
+.portfolio .portfolio-header h4 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.contact-us {
+  margin-top: 3rem;
+}
+.contact-us p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", "sans-serif";
+  margin-top: 2.5rem;
+  max-width: 360px;
+}
+.contact-us .information {
+  display: grid;
+}
+.contact-us .information h6 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "DM Sans", "sans-serif";
+}
+.contact-us .information a {
+  text-decoration: none;
+}
+.contact-us .information a span {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", "sans-serif";
+  color: #000000;
+}
+.contact-us .contact-detail h6 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "DM Sans", "sans-serif";
+}
+.contact-us .contact-detail ul {
+  padding-left: 0 !important;
+}
+.contact-us .contact-detail ul .contact-list {
+  list-style-type: none;
+  display: flex;
+  padding-top: 1.5rem;
+}
+.contact-us .contact-detail ul .contact-list:hover svg {
+  cursor: pointer;
+  color: #ffffff;
+  fill: #b624ff;
+}
+.contact-us .contact-detail ul .contact-list:hover li {
+  font-family: "Poppins", "sans-serif";
+}
+
+.footer {
+  border-top: 1px solid #383838;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+.footer p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.footer ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+.footer ul li:not(:last-child) {
+  margin-right: 24px;
+}
+.footer ul li a {
+  color: #A3A3A3;
+}
+.footer ul li a svg:hover {
+  cursor: pointer;
+  stroke: white;
+  color: #b624ff;
+  fill: #b624ff;
+}/*# sourceMappingURL=style.css.map */
